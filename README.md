@@ -1,6 +1,6 @@
 # Algoritmos e Lógica de Programação
 
-- 📖 Desenvolvido no Youtube pela plataforma [Curso em Vídeo](https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV) [40 horas].
+- 📖 Curso gratuito de Algoritmos, disponível no [Youtube](https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV) e na plataforma [Curso em Vídeo](https://www.cursoemvideo.com/curso/curso-de-algoritmo/).
 - 🖖 Nesta formação, o professor Gustavo Guanabara ensina os procedimentos para aprender a programar em 15 aulas utilizando as ferramentas **VisuAlg** e **Scratch**.
 
 ## Conteúdo
