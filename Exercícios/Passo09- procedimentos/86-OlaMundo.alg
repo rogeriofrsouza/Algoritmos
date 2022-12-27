@@ -1,26 +1,23 @@
-algoritmo "MsgParametro"
+algoritmo "OláMundo"
 var
-   opcao, msg: Caractere
+   opcao: Caractere
 
-procedimento Gerador(P: Caractere)
+procedimento Gerador()
 inicio
-   Escreval()
+   LimpaTela
    Escreval("+------======------+")
-   Escreval("", P)
+   Escreval("  Olá, Mundo!")
    Escreval("+------======------+")
 fimprocedimento
 
 inicio
    Escreval("Gostaria de escrever na tela? [S/N]")
    Leia(opcao)
-   Escreval()
 
    Se (opcao = "S") entao
-      Escreval("Qual mensagem quer escrever? ")
-      leia(msg)
-      Gerador(msg)
+      Gerador()
    senao
-        Escreval()
+        LimpaTela
         Escreval("Ok, até breve!")
    FimSe
 fimalgoritmo

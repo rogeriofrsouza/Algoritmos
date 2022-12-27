@@ -1,60 +1,56 @@
 algoritmo "Situacao"
 var
-   A, B, M: Real
+   A, B, Media: Real
    Sit: Caractere
    
-Procedimento Tela()
+procedimento Titulo()
 inicio
-      LimpaTela
-      Escreval("+-------------------------+")
-      Escreval("  F A T E C ITAPETININGA")
-      Escreval("+-------------------------+")
-      Escreval()
-FimProcedimento
+   LimpaTela
+   Escreval("+-------------------------+")
+   Escreval("  F A T E C SOROCABA")
+   Escreval("+-------------------------+")
+   Escreval()
+fimprocedimento
    
-Funcao Media(X, Y: Real): Real
+funcao CalculaMedia(X, Y: Real): Real
+inicio
+   Retorne (X + Y) / 2
+fimfuncao
+
+funcao VerificaSituacao(M: Real): Caractere
 var
-   Z: Real
+   Res: Caractere
+   
 inicio
-      Z := (X + Y)/ 2
-      Retorne Z
-FimFuncao
-
-Funcao Situacao(S: Real): Caractere
-inicio
-      Se (S <= 10) e (S >= 7) entao
-         Retorne "APROVADO"
+   Se (M < 5) entao
+      Res := "REPROVADO"
+   senao
+      Se (M < 7) entao
+         Res := "em RECUPERAÇÃO"
       senao
-           Se (S < 7) e (S >= 5) entao
-              Retorne "em RECUPERAÇÃO"
-           senao
-                Se (S < 5) e (S >= 0) entao
-                   Retorne "REPROVADO"
-                senao
-                     Retorne "ERRO"
-                FimSe
-           FimSe
+           Res := "APROVADO"
       FimSe
-FimFuncao
+   FimSe
+   
+   Retorne Res
+fimfuncao
 
 inicio
-      Tela()
-      
+   Titulo()
+
+   Repita
       Escreva("Digite a primeira nota: ")
       Leia(A)
-      Escreval()
       Escreva("Digite a segunda nota: ")
       Leia(B)
-      
-      M := Media(A, B)
-      Sit := Situacao(M)
-      
-      Tela()
-      Se (Sit <> "ERRO") entao
-         Escreval("Média do aluno: ", M:4:2)
-         Escreval()
-         Escreval("Situação: ", Sit)
-      senao
-           Escreval("ERRO, tente novamente...")
-      FimSe
+
+      Media := CalculaMedia(A, B)
+      Escreval()
+   Ate (Media >= 0) e (Media <= 10)
+   
+   Sit := VerificaSituacao(Media)
+
+   Titulo()
+   Escreval("Média do aluno: ", Media:4:2)
+   Escreval("Situação: ", Sit)
 fimalgoritmo
