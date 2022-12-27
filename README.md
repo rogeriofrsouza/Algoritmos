@@ -1,7 +1,7 @@
 # Algoritmos e Lógica de Programação
 
-- 📖 Curso gratuito de Algoritmos, disponível no [Youtube](https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV) e na plataforma [Curso em Vídeo](https://www.cursoemvideo.com/curso/curso-de-algoritmo/)
-- 🖖 Nesta formação, o professor Gustavo Guanabara ensina os procedimentos para aprender a programar em 15 aulas didáticas, através do uso do Portugol (pseudocódigo)
+- 📖 Curso gratuito de Algoritmos, disponível no [Youtube](https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV) e na plataforma [Curso em Vídeo](https://www.cursoemvideo.com/curso/curso-de-algoritmo/).
+- 🖖 Nesta formação, o professor Gustavo Guanabara ensina os procedimentos para aprender a programar em 15 aulas didáticas, através do uso do Portugol (pseudocódigo).
 - 🖥️ Ferramentas utilizadas: **VisuAlg 2.0** e **Scratch 2**.
 
 ## Conteúdo
